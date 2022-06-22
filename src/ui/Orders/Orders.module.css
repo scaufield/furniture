@@ -1,0 +1,46 @@
+
+.orders{
+    margin-top: 16px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.title{
+    margin-top: 32px;
+}
+
+.order{
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    border: 1px solid #DEDEDE;
+    justify-content: space-between;
+}
+
+.created{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.total{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.status{
+    font-size: 1.2rem;
+    color: green;
+}
+
+.emptyOrders{
+    margin-top: 16px;
+    font-size: 1.25rem;
+    color: #767676;
+}
+
+.address{
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    color: #767676;
+}

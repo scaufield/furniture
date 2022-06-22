@@ -1,0 +1,83 @@
+
+.orders {
+    margin-top: 16px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.title {
+    margin-top: 32px;
+}
+
+.order {
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    border: 1px solid #DEDEDE;
+    justify-content: space-between;
+}
+
+.created {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.total {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.status {
+    font-size: 1.2rem;
+    color: green;
+}
+
+.emptyOrders {
+    margin-top: 16px;
+    font-size: 1.25rem;
+    color: #767676;
+}
+
+.address {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    color: #767676;
+}
+
+.cart {
+    display: none;
+}
+
+.content {
+    display: flex;
+    gap: 32px;
+}
+.expand {
+    display: block;
+    height: max-content;
+}
+
+.listItem{
+    font-size: 1.25rem;
+    color: #8d8d8d;
+}
+
+.listTitle{
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: black;
+}
+
+
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.button{
+    margin-top: 16px;
+}

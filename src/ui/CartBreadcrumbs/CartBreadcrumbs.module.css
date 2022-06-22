@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3.85rem;
+}
+
+.divider{
+    border-bottom: 1px solid #B1B1B1;
+    width: 100%;
+    margin: 12px 30px;
+}
+
+.item{
+    font-size: 1.55rem;
+    color: #CCCCCC;
+}
+
+.active{
+    font-weight: 500;
+    color: black;
+}

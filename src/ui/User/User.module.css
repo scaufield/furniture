@@ -1,0 +1,9 @@
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: calc(100vh - 50rem);
+  margin: 0 auto;
+}

@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.title {
+    align-self: center;
+    font-size: 2rem;
+}
+
+.subtitle {
+    align-self: center;
+    font-size: 2rem;
+}
+
+

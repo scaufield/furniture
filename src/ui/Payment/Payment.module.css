@@ -1,0 +1,37 @@
+.input{
+  min-width: 70px;
+  font-size: 1.2rem;
+  padding: 1.5rem 2.4rem;
+  border: 2px solid #f1f1f1;
+  background-color: #f1f1f1;
+  width: 100%;
+  font-family: "SF UI Text", serif ;
+}
+
+.input:focus{
+  background-color: white;
+  border: 2px solid #f1f1f1;
+  outline:none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 2.4rem;
+  margin: 0 auto;
+}
+
+.container{
+  width: 100%;
+}
+
+.buttons{
+  display: flex;
+  gap: 1.4rem;
+}
+
+textarea{
+  resize: none;
+  font-family: "SF UI Text", serif ;
+}

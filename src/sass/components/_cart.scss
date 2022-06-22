@@ -1,0 +1,166 @@
+.cart {
+  @include flex(flex-start, space-around);
+  margin-top: 16rem;
+
+  @include mobile {
+    flex-wrap: wrap;
+  }
+
+  @include tablet {
+    flex-wrap: wrap;
+  }
+
+  &__list {
+    width: 50%;
+
+    .empty-cart {
+      //display: flex;
+      &__title {
+        font-size: 1.5rem;
+        color: $main-color;
+      }
+    }
+
+
+    @include mobile {
+      width: 100%;
+    }
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  &__info {
+    padding: 20px 80px 80px 20px;
+    margin-top: 30px;
+    position: sticky;
+    top: calc(#{$header-shrink-height} + 20px);
+    border-right: 1px solid #DEDEDE;
+    width: 40%;
+
+
+    @include mobile {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 60px;
+      position: unset;
+      border-right: none;
+      padding: 0;
+    }
+
+    @include tablet {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 60px;
+      position: unset;
+      border-right: none;
+      padding: 0;
+    }
+
+    &__txt {
+      & > * {
+        margin-bottom: 25px;
+      }
+
+      p {
+        font-size: 1.45rem;
+      }
+
+      &__price {
+        @include flex(flex-end, flex-start);
+        font-size: 1.45rem;
+        margin-bottom: 4rem;
+
+        span:nth-child(1) {
+          margin-right: 1rem;
+          border-bottom: 1px solid #DEDEDE;
+          padding-bottom: 3rem;
+        }
+
+        span:nth-child(2) {
+          font-size: 2rem;
+          font-weight: 500;
+          padding-bottom: 3rem;
+        }
+      }
+    }
+
+    &__btn {
+      & > * {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__item {
+    @include flex(center, space-between);
+    margin-bottom: 20px;
+
+    &__image {
+      margin-right: 20px;
+
+      img {
+        width: calc(#{$header-tablet-height} + 80px);
+        height: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+      }
+    }
+
+    &__info {
+      @include flex(center, space-between);
+      flex-grow: 1;
+      @include tablet {
+        flex-direction: column;
+
+      }
+      @include mobile {
+        @include flex(flex-start, center);
+        flex-direction: column;
+
+        & > * {
+          margin-bottom: 10px;
+        }
+      }
+
+      &__name {
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-size: 1.25rem;
+
+        @include mobile {
+          width: 100%;
+        }
+      }
+
+      &__price {
+        font-size: 1rem;
+      }
+
+      &_right {
+        display: flex;
+        flex-direction: column;
+        align-self: stretch;
+        justify-content: space-around;
+        align-items: flex-end;
+      }
+
+      &_left {
+        margin-right: auto;
+      }
+    }
+
+    &__del {
+      font-size: 1.5rem;
+
+      i {
+        cursor: pointer;
+
+        &:hover {
+          color: $main-color;
+        }
+      }
+    }
+  }
+}
